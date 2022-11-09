@@ -1,0 +1,111 @@
+/*Barra de navegacion*/
+nav{
+    @include diseño(100%,40px,6px 0px 0px 0px,0px,flex);
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
+    background-color:$color-terciario;
+    a{
+        color: $color-primario ;
+        text-decoration: none;
+    
+        &:link{
+            color: $color-primario;
+            text-decoration: none;
+        }
+    }
+    .menu{
+        @include diseño(auto,auto,0px,10px,inline);
+        @include diseño_fuente( $letra-texto, normal, 600, 20px, 26px);
+        color:  $color-primario;
+        transition:background 1s;
+        border-radius: 5px;
+    
+        &:hover{
+            background:  $color-primario;
+        }
+        a:hover{
+            color: white;
+        }
+        
+    }
+    /*transformacion al pasar mouse por menu*/
+    
+    .menu__iconos{
+        @include diseño(auto,auto,0px,3px,inline);
+    }
+    .menu__iconos--modifier{
+        font-size: 28px;
+        color:$color-primario;
+        margin-right: 4px;
+    
+        &:hover{
+            animation: mover 0.3s;
+            animation-iteration-count: infinite;
+        }
+    }
+    @media (max-width:900px){
+   
+        .menu{
+            font-size: 15px;
+            margin: 5px;
+        
+        }
+        .menu__iconos--modifier{
+            font-size: 15px;
+        }   
+    }
+    @media (max-width:655px){
+
+        .menu{
+            font-size: 10px;
+        
+        }
+        .menu__iconos{
+            margin: 0px;
+        }
+        .menu__iconos--modifier{
+            font-size: 10px;
+            
+        }   
+    }
+    @media (max-width:480px){
+        .menu{
+            font-size: 8px;
+        
+        }
+        .menu__iconos{
+            margin: 0px;
+        }
+        .menu__iconos--modifier{
+            font-size: 10px;
+            
+        }
+    }
+}
+@media (max-width:480px){
+    
+    nav{
+        padding: 0;
+        height: 20px;
+    }
+}
+
+@keyframes mover{
+    0%{
+        transform: translate(0px,1px) rotate(0deg);
+    }
+    25%{
+        transform: translate(0px,2px) rotate(1deg);
+    }
+    50%{
+        transform: translate(0px,3px) rotate(2deg);
+    }
+    75%{
+        transform: translate(0px,2px) rotate(1deg);
+    }
+    100%{
+        transform: translate(0px,1px) rotate(0deg);
+    }
+
+}
