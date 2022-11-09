@@ -12,6 +12,15 @@ footer{
     #copyright_footer{
         grid-area:copyright_footer;
     }
+    a{
+        color: $color-primario ;
+        text-decoration: none;
+    
+        &:link{
+            color: $color-primario;
+            text-decoration: none;
+        }
+    }
     @include diseño(auto,80px,5px,0px,grid);
     background-color: $color-terciario;
     @include grilla(". titulo_footer ."
@@ -48,6 +57,8 @@ footer{
         margin-top: 3px;
     
         &:hover{
+            color: $color-primario;
+            text-decoration: none;
             animation: mover 0.3s;
             animation-iteration-count: infinite;
         }
