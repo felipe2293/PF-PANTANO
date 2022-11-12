@@ -41,29 +41,14 @@ header{
             color: $color-secundario;
         }
         @media (max-width:900px){
-            h1{   
-                font-size: 60px;
-            }
-            h2{
-                font-size: 20px;
-            }
+           
         }
 
         @media (max-width:655px){
-            h1{   
-                font-size: 40px;
-            }
-            h2{
-                font-size: 15px;
-            }
+            
         }
         @media (max-width:480px){
-            h1{   
-                font-size: 30px;
-            }
-            h2{
-                font-size: 12px;
-            }
+            
         }
         
         

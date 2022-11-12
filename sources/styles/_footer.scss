@@ -67,29 +67,6 @@ footer{
     .pie__centrar{
         margin-left: 0%;
     }
-
-    @media (max-width:900px){
-        .pie__copyright{
-            font-size: 9px;
-        }
-        .pie__marca{
-            font-size: 13px;
-        }
-        .pie__descripcion{
-            font-size:8px;
-        }
-        .pie__iconos{
-            width: auto;
-            height: auto;
-            display: inline-block;
-            margin-top: 3px;
-        }
-    }
-    @media (max-width:480px){
-        .pie__copyright{
-            font-size: 8px;
-        }  
-    }        
 }
 
 @keyframes mover{

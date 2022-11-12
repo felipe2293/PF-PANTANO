@@ -44,52 +44,9 @@ nav{
             animation-iteration-count: infinite;
         }
     }
-    @media (max-width:900px){
    
-        .menu{
-            font-size: 15px;
-            margin: 5px;
-        
-        }
-        .menu__iconos--modifier{
-            font-size: 15px;
-        }   
-    }
-    @media (max-width:655px){
+}
 
-        .menu{
-            font-size: 10px;
-        
-        }
-        .menu__iconos{
-            margin: 0px;
-        }
-        .menu__iconos--modifier{
-            font-size: 10px;
-            
-        }   
-    }
-    @media (max-width:480px){
-        .menu{
-            font-size: 8px;
-        
-        }
-        .menu__iconos{
-            margin: 0px;
-        }
-        .menu__iconos--modifier{
-            font-size: 10px;
-            
-        }
-    }
-}
-@media (max-width:480px){
-    
-    nav{
-        padding: 0;
-        height: 20px;
-    }
-}
 
 @keyframes mover{
     0%{

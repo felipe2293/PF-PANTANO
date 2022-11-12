@@ -1,0 +1,463 @@
+/*Media Query's*/
+
+@media (max-width:900px){
+    header{
+        .encabezado{
+            h1{   
+                font-size: 60px;
+            }
+            h2{
+                font-size: 20px;
+            }
+        }
+    }
+    nav{
+        .menu{
+            font-size: 15px;
+            margin: 5px;
+            
+        }
+        .menu__iconos--modifier{
+            font-size: 15px;
+        }   
+    }
+    main{ 
+        .resumen{
+            width: auto;
+            height:520px;
+            @include grilla("resumen"
+                            "foto_resumen ", 1fr, 1fr, center);
+            .texto__resumen{
+                height: 130px;
+                font-size: 15px;
+            }
+            .imagen__resumen{
+                width: 496px;
+                height: 359px;
+            }
+        }
+
+        .clientes{
+            .clientes__texto{
+                width: 300px;
+                font-size: 15px;
+            }
+            .clientes__grid{
+                @include grilla(". cliente_1 cliente_2 ."
+                ". cliente_3 cliente_4 ."
+                ". cliente_5 cliente_6 .",0.5fr 0.5fr 0.5fr 0.5fr, 1fr 1fr 1fr, center);
+                .clientes__img{
+                    width: 155px;
+                    height: 122px;
+                }
+                
+
+            }
+        }
+
+        .QuienesSomos{
+            .QuienesSomos__titulo{
+                font-size: 23px;
+                padding-bottom: 10px;
+                height: 118px;
+            }
+            
+            .QuienesSomos__parrafo{
+                font-size: 15px;
+            }
+            
+            .QuienesSomos__parrafo--modifier{
+                font-size: 15px;
+            }
+            
+            .QuienesSomos__imagen{
+                width: 300px;
+                height: 400px;
+            
+            }
+
+        }
+
+        .Vision{
+            .Vision__titulo{
+                font-size: 23px;
+                padding-bottom: 10px;
+                height: 118px;
+            }
+            
+            .Vision__parrafo{
+                font-size: 15px;
+                .Vision__parrafo--modifier{
+                    font-size: 15px;
+                }
+            }
+            
+            .Vision__imagen{
+                width: 300px;
+                height: 400px;
+            
+            }
+        }
+
+        .Servicios{
+            .Servicios__titulo{
+                font-size: 23px;
+                padding-bottom: 10px;
+                height: 118px;
+            }
+            
+            .Servicios__lista{
+                font-size: 15px;
+            }
+        }
+
+        .Proyectos{
+            .Proyectos__titulo{
+                font-size: 20px;
+                padding-bottom: 80px;
+                height: 118px;
+            }
+            
+            .Proyectos__parrafo{
+                font-size: 15px;
+            }
+        }
+
+        .Contacto{
+            .Contacto__titulo{
+                font-size: 23px;
+            }
+            
+            .Contacto__parrafo{
+                font-size: 15px;
+            }
+            .Contacto__telefono{
+                font-size: 20px;
+
+            }
+            .Contacto__telefono--modifier{
+                font-size: 45px;
+            }
+            .Contacto__formulario--texto{
+                font-size: 15px;
+            }
+            
+            .Contacto__formulario--respuesta{
+                font-size: 13px;
+            }
+            
+            .Contacto__boton{
+                font-size: 15px;
+                width: 138px;
+            } 
+        }
+    
+    }
+
+    footer{
+        .pie__copyright{
+            font-size: 9px;
+        }
+        .pie__marca{
+            font-size: 13px;
+        }
+        .pie__descripcion{
+            font-size:8px;
+        }
+        .pie__iconos{
+            width: auto;
+            height: auto;
+            display: inline-block;
+            margin-top: 3px;
+        }
+    }
+
+}
+@media (max-width:570px){
+    main{
+        .Proyectos{
+            @include grilla("Proyectos_titulo_1"
+                        "Proyectos_parrafo_1"  
+                        "Proyectos_titulo_2"
+                        "Proyectos_parrafo_2"
+                        "Proyectos_titulo_3"
+                        "Proyectos_parrafo_3",1fr,0.1fr 0.5fr 0.1fr 0.5fr 0.1fr 0.5fr,center);
+        
+        
+            .Proyectos__titulo{
+                font-size: 20px;
+                height: auto;
+                padding: 0px;
+                margin: 0px;
+                text-align: center;
+            }
+            
+            .Proyectos__parrafo{
+                font-size: 12px;
+                padding: 0px;
+                margin: 0px;
+                text-align: center;
+                
+            }
+            .Proyectos--modifier{
+                border-left: none;
+                padding-left: 0px;
+            }
+        }
+    }
+    
+    
+
+}
+@media (max-width:655px){
+    header{
+        .menu{
+            font-size: 8px;
+        
+        }
+        .menu__iconos{
+            margin: 0px;
+        }
+        .menu__iconos--modifier{
+            font-size: 10px;
+            
+        }
+        .encabezado{
+            h1{   
+                font-size: 40px;
+            }
+            h2{
+                font-size: 15px;
+            }
+        }
+    }
+    nav{
+        .menu{
+            font-size: 10px;
+        
+        }
+        .menu__iconos{
+            margin: 0px;
+        }
+        .menu__iconos--modifier{
+            font-size: 10px;
+            
+        }   
+    }
+    main{
+        .resumen{
+            .texto__resumen{
+                height: 100px;
+                width: 440px;
+                font-size: 12px;
+            }
+            .imagen__resumen{
+                width: 466px;
+                height: 359px;
+            }
+        }
+        .clientes{
+            margin-top: 50px;
+        }
+        .QuienesSomos{
+            margin-top: 20px;
+            margin-bottom: 30px;
+            @include grilla("QuienesSomos_titulo"
+                            "QuienesSomos_imagen"
+                            "QuienesSomos_parrafo", 1fr, 0.1fr 1fr 1fr, center);
+            .QuienesSomos__titulo{
+                font-size: 25px;
+                text-align: center;
+            }
+            
+            .QuienesSomos__parrafo{
+                padding-top: 10px;
+                font-size: 15px;
+            }
+            
+            .QuienesSomos__parrafo--modifier{
+                font-size: 15px;
+            }
+        }
+        .Vision{
+            margin-top: 20px;
+            margin-bottom: 30px;
+            @include grilla("Vision_titulo"
+                            "Vision_imagen"
+                            "Vision_parrafo", 1fr, 0.1fr 1fr 1fr, center);
+            .Vision__titulo{
+                font-size: 25px;
+                text-align: center;
+            }
+            
+            .Vision__parrafo{
+                padding-top: 10px;
+                font-size: 15px;
+                .Vision__parrafo--modifier{
+                    font-size: 15px;
+                }
+            }
+        }
+        .Servicios{
+            .Servicios__titulo{
+                font-size: 20px;
+                text-align: center;
+                padding-bottom: 30px;
+            }
+            
+            .Servicios__lista{
+                padding-top: 20px;
+                font-size: 15px;
+                
+            } 
+        }
+        .Proyectos{
+            .Proyectos__titulo{
+                font-size: 20px;
+                text-align: center;
+            }
+            
+            .Proyectos__parrafo{
+                padding-top: 20px;
+                font-size: 15px;
+                
+            }
+        }
+        .Contacto{
+            .Contacto--modifier{
+                border-left: none;
+                padding: 10px 0px 0px 0px;
+            }
+        }
+    }
+
+}
+@media (max-width:480px){
+    header{
+        h1{   
+            font-size: 30px;
+        }
+        h2{
+            font-size: 12px;
+        }  
+    }
+    nav{
+        padding: 0;
+        height: 20px;
+    }
+    main{
+        .resumen{
+            width: auto;
+            height:520px;
+
+            .texto__resumen{
+                height: 100px;
+                width: 420px;
+                font-size: 11px;
+            }
+            .imagen__resumen{
+                width: 420px;
+                height: 359px;
+            }
+        }
+        
+        .QuienesSomos{
+            .QuienesSomos__titulo{
+                font-size: 20px;
+                margin:10px;
+                height: 50px;
+            }
+            
+            .QuienesSomos__parrafo{
+                font-size: 12px;
+            }
+            
+            .QuienesSomos__parrafo--modifier{
+                font-size: 12px;
+            }
+        
+            .QuienesSomos__imagen{
+                width: 250px;
+                height: 300px;
+            
+            }
+        }
+        .Vision{
+            .Vision__titulo{
+                font-size: 20px;
+                margin:10px;
+                height: 50px;
+            }
+            
+            .Vision__parrafo{
+                font-size: 12px;
+                .Vision__parrafo--modifier{
+                    font-size: 12px;
+                }
+            }
+            
+           
+        
+            .Vision__imagen{
+                width: 250px;
+                height: 300px;
+            
+            }
+        }
+        .Servicios{
+            .Servicios__titulo{
+                font-size: 18px;
+                height: 50px;
+                padding-bottom: 100px;
+            }
+            
+            .Servicios__lista{
+                font-size: 12px;
+               
+            }
+        }
+        .Contacto{
+            .Contacto__titulo{
+                font-size: 20px;
+            }
+            
+            .Contacto__parrafo{
+                font-size: 12px;
+            }
+            .Contacto__telefono{
+                font-size: 16px;
+
+            }
+            .Contacto__telefono--modifier{
+                font-size: 40px;
+            }
+            .Contacto__formulario--texto{
+                font-size: 12px;
+            }
+            
+            .Contacto__formulario--respuesta{
+                font-size: 10px;
+            }
+            
+            .Contacto__boton{
+                font-size: 12px;
+                width: 118px;
+            }
+        }
+
+
+    }
+    footer{
+        .pie__copyright{
+            font-size: 8px;
+        }  
+    }
+}
+
+
+
+
+
+
+
+        
