@@ -2,6 +2,7 @@
 /*Encabezado*/
 header{
     .encabezado{
+        height: auto;
         #titulo{
             grid-area:titulo;
         }
@@ -40,17 +41,6 @@ header{
             text-align: center;
             color: $color-secundario;
         }
-        @media (max-width:900px){
-           
-        }
-
-        @media (max-width:655px){
-            
-        }
-        @media (max-width:480px){
-            
-        }
-        
-        
+       
     }
 }

@@ -1,5 +1,24 @@
 /*Media Query's*/
-
+@media (max-width:1150px){
+    main{
+        .resumen{
+            width: auto;
+            height:520px;
+            @include grilla("resumen"
+                            "foto_resumen ", 1fr, 1fr, center);
+            .texto__resumen{
+                margin-bottom: 20px;
+            }
+            .imagen__resumen{
+                width: 520px;
+                height: 400px;
+            }
+        }
+        .clientes{
+            @include diseño(auto,auto,0px,100px 0px 0px 0px ,block);
+        }
+    }  
+}
 @media (max-width:900px){
     header{
         .encabezado{
@@ -38,6 +57,9 @@
         }
 
         .clientes{
+
+            @include diseño(auto,auto,0px,50px 0px 0px 0px ,block);
+
             .clientes__texto{
                 width: 300px;
                 font-size: 15px;

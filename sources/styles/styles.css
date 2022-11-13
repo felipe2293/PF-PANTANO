@@ -105,6 +105,7 @@ nav .menu__iconos--modifier:hover {
 }
 /*Encabezado*/
 header .encabezado {
+  height: auto;
   width: 100%;
   height: 400px;
   padding: 0px;
@@ -156,6 +157,7 @@ header .encabezado h2 {
   text-align: center;
   color: #000000;
 }
+
 /*Contenido de cada Pagina del sitio WEB*/
 main .resumen {
   width: auto;
@@ -667,6 +669,30 @@ footer .pie__centrar {
   }
 }
 /*Media Query's*/
+@media (max-width: 1150px) {
+  main .resumen {
+    width: auto;
+    height: 520px;
+    grid-template-areas: "resumen" "foto_resumen ";
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    justify-items: center;
+  }
+  main .resumen .texto__resumen {
+    margin-bottom: 20px;
+  }
+  main .resumen .imagen__resumen {
+    width: 520px;
+    height: 400px;
+  }
+  main .clientes {
+    width: auto;
+    height: auto;
+    padding: 0px;
+    margin: 100px 0px 0px 0px;
+    display: block;
+  }
+}
 @media (max-width: 900px) {
   header .encabezado h1 {
     font-size: 60px;
@@ -696,6 +722,13 @@ footer .pie__centrar {
   main .resumen .imagen__resumen {
     width: 496px;
     height: 359px;
+  }
+  main .clientes {
+    width: auto;
+    height: auto;
+    padding: 0px;
+    margin: 50px 0px 0px 0px;
+    display: block;
   }
   main .clientes .clientes__texto {
     width: 300px;
