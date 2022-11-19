@@ -132,7 +132,7 @@
         .Servicios{
             .Servicios__titulo{
                 font-size: 23px;
-                padding-bottom: 10px;
+                padding-bottom: 46px;
                 height: 118px;
             }
             
@@ -375,6 +375,7 @@
             }  
         }
     }
+
     nav{
         height: 50px;
         padding: 0;
@@ -445,15 +446,31 @@
             }
         }
         .Servicios{
+            margin:0px 0px 0px 0px;
+            @include grilla("Servicios_titulo_1 "
+                        "Servicios_lista_1 "
+                        "Servicios_titulo_2"
+                        "Servicios_lista_2", 1fr ,0.3fr 0.3fr 0.3fr 0.3fr, center);
             .Servicios__titulo{
+                margin-top: 20px;
                 font-size: 18px;
                 height: 50px;
-                padding-bottom: 100px;
+                padding-bottom: 46px;
+
             }
             
             .Servicios__lista{
                 font-size: 12px;
-               
+                
+            }
+            .Servicios--modifier{
+                border-left: none;
+            }
+        }
+        .Proyectos{
+            margin: 0px;
+            .Proyectos__titulo{
+                margin-top: 20px;
             }
         }
         .Contacto{
@@ -466,7 +483,6 @@
             }
             .Contacto__telefono{
                 font-size: 16px;
-
             }
             .Contacto__telefono--modifier{
                 font-size: 40px;
