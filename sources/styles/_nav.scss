@@ -1,5 +1,8 @@
 /*Barra de navegacion*/
 nav{
+    .boton__menu{
+        display: none;
+    }
     @include diseño(100%,40px,6px 0px 0px 0px,0px,flex);
     flex-direction: row;
     justify-content:space-between;

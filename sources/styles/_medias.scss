@@ -195,65 +195,23 @@
     }
 
 }
-@media (max-width:570px){
-    main{
-        .Proyectos{
-            @include grilla("Proyectos_titulo_1"
-                        "Proyectos_parrafo_1"  
-                        "Proyectos_titulo_2"
-                        "Proyectos_parrafo_2"
-                        "Proyectos_titulo_3"
-                        "Proyectos_parrafo_3",1fr,0.1fr 0.5fr 0.1fr 0.5fr 0.1fr 0.5fr,center);
-        
-        
-            .Proyectos__titulo{
-                font-size: 20px;
-                height: auto;
-                padding: 0px;
-                margin: 0px;
-                text-align: center;
-            }
-            
-            .Proyectos__parrafo{
-                font-size: 12px;
-                padding: 0px;
-                margin: 0px;
-                text-align: center;
-                
-            }
-            .Proyectos--modifier{
-                border-left: none;
-                padding-left: 0px;
-            }
-        }
-    }
-    
-    
 
-}
 @media (max-width:655px){
     header{
-        .menu{
-            font-size: 8px;
-        
-        }
-        .menu__iconos{
-            margin: 0px;
-        }
-        .menu__iconos--modifier{
-            font-size: 10px;
-            
-        }
         .encabezado{
-            h1{   
+            @include diseño(100%,330px,0px,0px,grid);
+            h1{ 
+                margin-top:60px ;  
                 font-size: 40px;
             }
             h2{
                 font-size: 15px;
             }
         }
+
     }
     nav{
+        height: 20px;
         .menu{
             font-size: 10px;
         
@@ -274,7 +232,7 @@
                 font-size: 12px;
             }
             .imagen__resumen{
-                width: 466px;
+                width: 460px;
                 height: 359px;
             }
         }
@@ -354,18 +312,62 @@
     }
 
 }
+@media (max-width:570px){
+    main{
+        .Proyectos{
+            @include grilla("Proyectos_titulo_1"
+                        "Proyectos_parrafo_1"  
+                        "Proyectos_titulo_2"
+                        "Proyectos_parrafo_2"
+                        "Proyectos_titulo_3"
+                        "Proyectos_parrafo_3",1fr,0.1fr 0.5fr 0.1fr 0.5fr 0.1fr 0.5fr,center);
+        
+        
+            .Proyectos__titulo{
+                font-size: 20px;
+                height: auto;
+                padding: 0px;
+                margin: 0px;
+                text-align: center;
+            }
+            
+            .Proyectos__parrafo{
+                font-size: 12px;
+                padding: 0px;
+                margin: 0px;
+                text-align: center;
+                
+            }
+            .Proyectos--modifier{
+                border-left: none;
+                padding-left: 0px;
+            }
+        }
+    }
+
+
+}
+
 @media (max-width:480px){
     header{
-        h1{   
-            font-size: 30px;
+        .encabezado{
+            h1{   
+                font-size:32px;
+            }
+            h2{
+                font-size: 15px;
+            }  
         }
-        h2{
-            font-size: 12px;
-        }  
     }
     nav{
+        height: 45px;
         padding: 0;
-        height: 20px;
+        flex-direction: column;
+        .menu{
+            margin: 0px;
+            font-size: 9px;
+        }
+        
     }
     main{
         .resumen{
@@ -381,8 +383,7 @@
                 width: 420px;
                 height: 359px;
             }
-        }
-        
+        } 
         .QuienesSomos{
             .QuienesSomos__titulo{
                 font-size: 20px;
@@ -417,9 +418,6 @@
                     font-size: 12px;
                 }
             }
-            
-           
-        
             .Vision__imagen{
                 width: 250px;
                 height: 300px;
