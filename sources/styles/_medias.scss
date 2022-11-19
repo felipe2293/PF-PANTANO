@@ -16,6 +16,14 @@
         }
         .clientes{
             @include diseño(auto,auto,0px,100px 0px 0px 0px ,block);
+            .clientes__grid{
+               
+                .clientes__img{
+                    margin: 0px 20px 30px 0px;
+                }
+                
+
+            }
         }
     }  
 }
@@ -238,6 +246,14 @@
         }
         .clientes{
             margin-top: 50px;
+            .clientes__grid{
+                .clientes__img{
+                    width: 122px;
+                    height: 117px;
+                }
+                
+
+            }
         }
         .QuienesSomos{
             margin-top: 20px;
@@ -360,12 +376,15 @@
         }
     }
     nav{
-        height: 45px;
+        height: 50px;
         padding: 0;
         flex-direction: column;
         .menu{
             margin: 0px;
             font-size: 9px;
+        }
+        .fa-ul{
+            margin-left: 0rem;
         }
         
     }
@@ -373,15 +392,16 @@
         .resumen{
             width: auto;
             height:520px;
-
+            margin: 0px;
             .texto__resumen{
-                height: 100px;
-                width: 420px;
-                font-size: 11px;
+                height: auto;
+                width: auto;
+                font-size: 12px;
+                text-align: center;
             }
             .imagen__resumen{
-                width: 420px;
-                height: 359px;
+                width: 290px;
+                height: 290px;
             }
         } 
         .QuienesSomos{
@@ -457,6 +477,7 @@
             
             .Contacto__formulario--respuesta{
                 font-size: 10px;
+                width: 290px;
             }
             
             .Contacto__boton{
@@ -468,8 +489,13 @@
 
     }
     footer{
+        @include grilla(". titulo_footer ."
+                    ". subtitulo_footer ."
+                    ". iconos_footer ."
+                    ". copyright_footer .",1fr 2fr 1fr,1fr 1fr 1fr 1fr, center);
         .pie__copyright{
             font-size: 8px;
+            text-align: center;
         }  
     }
 }
