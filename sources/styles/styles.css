@@ -400,7 +400,7 @@ main .Servicios {
   width: auto;
   height: auto;
   padding: 0px;
-  margin: 50px 0px 50px 0px;
+  margin: 50px 0px 79px 0px;
   display: grid;
   grid-template-areas: "Servicios_titulo_1 Servicios_titulo_2" "Servicios_lista_1 Servicios_lista_2";
   grid-template-columns: 1fr 1fr;

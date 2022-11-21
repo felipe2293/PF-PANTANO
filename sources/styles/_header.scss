@@ -1,45 +1,47 @@
 /*Encabezado*/
-header{
-    .encabezado{
+header {
+    .encabezado {
         height: auto;
-        #titulo{
-            grid-area:titulo;
+
+        #titulo {
+            grid-area: titulo;
         }
-        #subtitulo{
-            grid-area:subtitulo;
+
+        #subtitulo {
+            grid-area: subtitulo;
         }
-        @include diseño(100%,400px,0px,0px,grid);
-        @include grilla(". titulo ."
-                        ". subtitulo .",1fr 2fr 1fr,1fr 1fr,center);
+
+        @include diseño(100%, 400px, 0px, 0px, grid);
+        @include grilla(". titulo ." ". subtitulo .", 1fr 2fr 1fr, 1fr 1fr, center);
         position: relative;
-    
+
         /*opacidad a la imagen sin que afecte al texto*/
-        &::before{
+        &::before {
             content: "";
-            background-image:url(../../sources/img/header.jpg);
-            background-size:cover;
-            position: absolute;   
+            background-image: url(../../sources/img/header.jpg);
+            background-size: cover;
+            position: absolute;
             top: 0px;
             right: 0px;
             bottom: 0px;
             left: 0px;
             opacity: 0.7;
         }
-    
-        h1{
+
+        h1 {
             position: relative;
-            @include diseño_fuente($letra-marca,bold, 400, 96px, 117px);
+            @include diseño_fuente($letra-marca, bold, 400, 96px, 117px);
             text-align: center;
             margin-top: 90px;
             color: $color-primario;
         }
-        h2{
+
+        h2 {
             position: relative;
-            @include diseño_fuente($letra-texto, normal,100%, 24px, 31px);
+            @include diseño_fuente($letra-texto, normal, 100%, 24px, 31px);
             margin-bottom: 60px;
             text-align: center;
             color: $color-secundario;
         }
-       
     }
 }
